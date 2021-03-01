@@ -1,5 +1,5 @@
 {
-  "name": "Brann/logger",
+  "name": "Brann",
   "description": "My logger",
   "type": "library",
   "minimum-stability": "dev",
@@ -11,7 +11,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Brann\\Logger\\": "src/"
+      "Brann\\": "src/"
     }
   },
   "require": {
