@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Niksteklo34\Logger;
+namespace Brann\Logger;
 
 
 class Logger implements LoggerInterface
@@ -61,7 +61,7 @@ class Logger implements LoggerInterface
         $logfile = $this->logFile;
         $handle = fopen($storage . '/' . $logfile . '.log', 'a+') or die("ALL IS CRASHED");
         $context = implode(',', $context);
-        $time = date('Y-m-d h-i-s');
+        $time = date('Y-m-d h:i:s');
         $message = "=====\nLevel: {$level}\nMessage: {$message}\nContext: {$context}\n\n{$time}\n=====\n\n";
         fwrite($handle, $message);
         fclose($handle);

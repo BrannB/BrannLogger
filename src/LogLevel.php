@@ -1,6 +1,6 @@
 <?php
 
-namespace Niksteklo34\Logger;
+namespace Brann\Logger;
 
 class LogLevel
 {
